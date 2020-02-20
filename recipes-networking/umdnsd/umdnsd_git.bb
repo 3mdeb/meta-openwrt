@@ -16,4 +16,6 @@ S = "${WORKDIR}/git"
 
 inherit cmake pkgconfig openwrt-services openwrt
 
+TARGET_CFLAGS += "-Wno-address-of-packed-member -Wno-format-truncation"
+
 FILES_${PN}  += "${libdir}/*"

@@ -14,6 +14,8 @@ SRCREV = "af9c293c1f1d8a97fbd8adf9c6070ead4920ca84"
 
 S = "${WORKDIR}/git"
 
+TARGET_CFLAGS = "-Wno-address-of-packed-member"
+
 inherit cmake pkgconfig openwrt
 
 FILES_${PN}  += "${libdir}/*"

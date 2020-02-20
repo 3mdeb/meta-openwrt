@@ -17,4 +17,6 @@ S = "${WORKDIR}/git"
 
 inherit cmake pkgconfig openwrt
 
+TARGET_CFLAGS = "-Wno-unused-result"
+
 FILES_${PN}  += "${libdir}/*"

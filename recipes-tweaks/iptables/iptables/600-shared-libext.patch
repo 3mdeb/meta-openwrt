@@ -182,8 +182,8 @@ index 3ff85893b2fa..5d6ee5ca049d 100644
  xtables_nft_multi_SOURCES  = xtables-nft-multi.c iptables-xml.c
  xtables_nft_multi_CFLAGS   = ${AM_CFLAGS}
 -xtables_nft_multi_LDADD    = ../extensions/libext.a ../extensions/libext_ebt.a
-++xtables_compat_multi_LDADD    =
-++xtables_compat_multi_LDFLAGS  = -liptext -liptext_ebt
++xtables_compat_multi_LDADD    =
++xtables_compat_multi_LDFLAGS  = -liptext -liptext_ebt
  if ENABLE_STATIC
  xtables_nft_multi_CFLAGS  += -DALL_INCLUSIVE
  endif
